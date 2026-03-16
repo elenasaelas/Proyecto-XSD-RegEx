@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usuarios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="validacionUsuarios.xsd">
+    <usuario>
+        <correo_electronico>rafaelgaming@gmail.com</correo_electronico>
+        <numero_de_telefono>654123321</numero_de_telefono>
+        <codigo_postal>50220</codigo_postal>
+        <nombre_de_usuario>rafaGamer</nombre_de_usuario>
+        <contrasena>GamingPC123!</contrasena>
+    </usuario>
+    <usuario>
+        <correo_electronico>joseantonio.bar@gmail.com</correo_electronico>
+        <numero_de_telefono>632934100</numero_de_telefono>
+        <codigo_postal>42056</codigo_postal>
+        <nombre_de_usuario>joseBar</nombre_de_usuario>
+        <contrasena>BarElAntonio@11</contrasena>
+    </usuario>
+    <usuario>
+        <correo_electronico>mariapastel@hotmail.com</correo_electronico>
+        <numero_de_telefono>639104802</numero_de_telefono>
+        <codigo_postal>11002</codigo_postal>
+        <nombre_de_usuario>pastelMaria</nombre_de_usuario>
+        <contrasena>PastelitosFresa?0</contrasena>
+    </usuario>
+    <usuario>
+        <correo_electronico>paulaarte@yahoo.com</correo_electronico>
+        <numero_de_telefono>652002139</numero_de_telefono>
+        <codigo_postal>41802</codigo_postal>
+        <nombre_de_usuario>arteByPaula</nombre_de_usuario>
+        <contrasena>ArtisticGirl_632</contrasena>
+    </usuario>
+</usuarios>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:simpleType name="tipoCorreo">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="tipoTelefono">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[6789][0-9]{8}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="tipoCodigoPostal">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(0[1-9]|[1-4][0-9]|5[0-2])[0-9]{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="tipoNombreUsuario">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-z][a-zA-Z0-9_]{2,29}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="tipoContrasena">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z0-9!@#%&amp;*?_\-+=.,;:\\]{8,}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:element name="usuarios">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="usuario" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="correo_electronico" type="tipoCorreo"/>
+                            <xs:element name="numero_de_telefono" type="tipoTelefono"/>
+                            <xs:element name="codigo_postal"      type="tipoCodigoPostal"/>
+                            <xs:element name="nombre_de_usuario"  type="tipoNombreUsuario"/>
+                            <xs:element name="contrasena"         type="tipoContrasena"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>
