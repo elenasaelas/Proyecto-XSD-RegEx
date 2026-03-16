@@ -2,7 +2,7 @@
 # Validación de Usuarios con XML y XSD
 
 ## Descripción
-Este proyecto contiene un sistema de almacenamiento y validación de los datos de los usuarios diseñados previamente mediante un archivo XML (`datosUsuarios.xml`) vinculado a un esquema de validación XSD (`validacionUsuarios.xsd`).
+En este proyecto se ha generado un documento XML con los datos de unos usuarios (`datosUsuarios.xml`) diseñados por mí además de un XSD que los valida correctamente (`validacionUsuarios.xsd`).
 
 ---
 
@@ -17,15 +17,9 @@ proyecto/
 
 ## Implementación
 
-El archivo XML contiene la lista de usuarios diseñados anteriormente con sus características como: correo electrónico, número de teléfono, código postal, nombre de usuario y contraseña.
+En el archivo XML donde estan los datos de los usuarios, contienen campos como el correo electrónico, número de teléfono, código postal, nombre de usuario y contraseña donde se guardan los datos correspondientes.
 
-El archivo XSD valida los tipos de datos y se asegura que las restricciones sean correctas mediante expresiones regulares. La vinculación entre ambos archivos se realiza con el atributo `xsi:noNamespaceSchemaLocation` en el elemento raíz del XML:
-```xml
-<usuarios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:noNamespaceSchemaLocation="validacionUsuarios.xsd">
-```
-
----
+En el archivo XSD, se validan los tipos de datos y se asegura que las restricciones sean correctas mediante expresiones regulares. La vinculación entre ambos archivos se realiza con el atributo `xsi:noNamespaceSchemaLocation` en el elemento raíz del XML propio.
 
 ## Restricciones aplicadas
 
